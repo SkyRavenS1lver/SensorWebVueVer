@@ -14,30 +14,29 @@ import { RouterLink } from 'vue-router'
                     </RouterLink>
                     <a class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseExample" href="#collapseExample">
                         <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
-                        Pendataan
+                        Graph
                     </a>
                     <div class="collapse" id="collapseExample">
                         <div class="nav-link row">
                             <RouterLink class="nav-link" to="/light">
-                                Pencahayaan
+                                Light
                             </RouterLink>
                             <RouterLink class="nav-link" to="/pressure">   
                                 Pressure
                             </RouterLink>
                             <RouterLink class="nav-link" to="/humidity">                            
-                                Persentase Kelembapan Tanah
-                            </RouterLink>
+                                Percent Soil Moisture                            </RouterLink>
                             <RouterLink class="nav-link" to="/airQ">                            
-                                Kualitas Udara
+                                Air Quality
                             </RouterLink>
                             <RouterLink class="nav-link" to="/altitude">                            
                                 Approx Altitude
                             </RouterLink>
                             <RouterLink class="nav-link" to="/rain">                            
-                                Curah Hujan
+                                Rain Drop
                             </RouterLink>
                             <RouterLink class="nav-link" to="/airH">                            
-                                Kelembapan Udara
+                                Humidity
                             </RouterLink>
                             <RouterLink class="nav-link" to="/temp1">                            
                                 Temperature 1

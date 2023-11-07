@@ -12,15 +12,15 @@ import Sidebar from './components/Sidebar.vue'
       <div id="layoutSidenav_content">
         <main>
         <RouterView v-if="$route.fullPath == '/'" :model="light" />
-        <RouterView v-if="$route.fullPath == '/light'" :model="light" title="Grafik Pencahayaan" subtitle="Light (lux)"/>
-        <RouterView v-if="$route.fullPath == '/pressure'" :model="pressure" title="Grafik Pressure" subtitle="Pressure (Pa)"/>
-        <RouterView v-if="$route.fullPath == '/humidity'" :model="lembapTanah" title="Grafik Kelembapan Tanah" subtitle="Kelembapan Tanah (%)"/>
-        <RouterView v-if="$route.fullPath == '/airQ'" :model="kualitas" title="Grafik Kualitas Udara" subtitle="Air Quality (PPM)"/>
-        <RouterView v-if="$route.fullPath == '/altitude'" :model="altitude" title="Grafik Approx Altitude" subtitle="Altitude (m)"/>
-        <RouterView v-if="$route.fullPath == '/rain'" :model="curah" title="Grafik Curah Hujan" subtitle="Curah Hujan"/>
-        <RouterView v-if="$route.fullPath == '/airH'" :model="lembapUdara" title="Grafik Kelembapan Udara" subtitle="Kelembapan Udara (%)"/>
-        <RouterView v-if="$route.fullPath == '/temp1'" :model="temperature" title="Grafik Temperatur 1" subtitle="Celcius (C)"/>
-        <RouterView v-if="$route.fullPath == '/temp2'" :model="temperature2" title="Grafik Temperatur 2" subtitle="Celcius (C)"/>
+        <RouterView v-if="$route.fullPath == '/light'" :model="light" title="Light" subtitle="Light (lux)"/>
+        <RouterView v-if="$route.fullPath == '/pressure'" :model="pressure" title="Pressure" subtitle="Pressure (Pa)"/>
+        <RouterView v-if="$route.fullPath == '/humidity'" :model="lembapTanah" title="Percent Soil Moisture" subtitle="Percent (%)"/>
+        <RouterView v-if="$route.fullPath == '/airQ'" :model="kualitas" title="Air Quality" subtitle="Air Quality (PPM)"/>
+        <RouterView v-if="$route.fullPath == '/altitude'" :model="altitude" title="Approx Altitude" subtitle="Altitude (m)"/>
+        <RouterView v-if="$route.fullPath == '/rain'" :model="curah" title="Rain drop" subtitle=""/>
+        <RouterView v-if="$route.fullPath == '/airH'" :model="lembapUdara" title="Humidity" subtitle="Percent (%)"/>
+        <RouterView v-if="$route.fullPath == '/temp1'" :model="temperature" title="Temperature 1" subtitle="Celcius (C)"/>
+        <RouterView v-if="$route.fullPath == '/temp2'" :model="temperature2" title="Temperature 2" subtitle="Celcius (C)"/>
         </main>
       </div>
     </div>
