@@ -24,12 +24,14 @@ defineProps({
     <div class="container-fluid px-4">
         <h1 class="mt-4">{{ title }}</h1>
         <hr />
-        <GChart style="width: 100rem; height: 50rem"
-        :settings="{ packages: ['corechart'] }"
-        type="LineChart"
-        :data="model"
-        :options="chartOptions"
-        />
+        <center>
+          <GChart style="width: 85rem; height: 50rem"
+          :settings="{ packages: ['corechart'] }"
+          type="LineChart"
+          :data="model"
+          :options="chartOptions"
+          />
+        </center>
     </div>
 </template>
 
